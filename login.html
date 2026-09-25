@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Bites - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-page">
+    <div class="auth-box">
+      <div class="auth-brand">
+        <div class="auth-logo-circle">UB</div>
+        <div class="auth-logo">Urban <span>Bites</span></div>
+      </div>
+      <p class="auth-subtitle">Welcome back! Please login to your account.</p>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="auth-form-group">
+          <label>Email Address</label>
+          <input type="email" id="loginEmail" placeholder="Enter your email">
+          <div class="auth-error" id="loginEmailErr">Valid email is required</div>
+        </div>
+        <div class="auth-form-group">
+          <label>Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password">
+          <div class="auth-error" id="loginPassErr">Password must be at least 6 characters</div>
+        </div>
+        <button type="submit" class="auth-btn">Login</button>
+      </form>
+      <div class="auth-switch">Don't have an account? <a href="signup.html">Sign Up</a></div>
+    </div>
+  </div>
+  <script src="productsdata.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

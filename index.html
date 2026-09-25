@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Urban Bites - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-logo-circle">UB</div>
+      <div class="navbar-logo">Urban <span>Bites</span></div>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="navbar-right">
+      <a href="#" class="cart-icon-btn" id="navCartBtn">
+        🛒 <span id="cartBadge" class="cart-badge">0</span>
+      </a>
+
+      <a href="login.html" class="navbar-btn" id="navLoginBtn">Login</a>
+      <div class="navbar-user" id="navUserSection" style="display:none;">
+        <div class="user-avatar" id="navUserAvatar"></div>
+        <button class="logout-btn" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Slide-over Drawer -->
+<div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer-header">
+    <h3>Your Cart</h3>
+    <button class="cart-close-btn" id="cartCloseBtn">&times;</button>
+  </div>
+  <div class="cart-drawer-body" id="cartDrawerBody">
+  </div>
+  <div class="cart-drawer-footer" id="cartDrawerFooter">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cartTotalPrice">$0.00</span>
+    </div>
+    <button class="btn-primary" id="checkoutBtn" style="width:100%; margin-top:10px;">Proceed to Checkout</button>
+  </div>
+</div>
+
+  <!-- HERO SLIDER -->
+  <div class="slider-wrapper">
+    <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1>Welcome to Urban Bites</h1>
+        <p>Where every meal tells a delicious story</p>
+        <a href="#reservation" class="btn-primary">Book a Table</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1>Fresh Ingredients, Bold Flavors</h1>
+        <p>Crafted with love and the finest local produce</p>
+        <a href="#reservation" class="btn-primary">Reserve Now</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1>Experience Fine Dining</h1>
+        <p>An unforgettable culinary journey awaits you</p>
+        <a href="#reservation" class="btn-primary">Get Started</a>
+      </div>
+    </div>
+    <button class="slider-btn slider-prev" id="sliderPrev">&#8249;</button>
+    <button class="slider-btn slider-next" id="sliderNext">&#8250;</button>
+    <div class="slider-dots">
+      <div class="dot active" data-index="0"></div>
+      <div class="dot" data-index="1"></div>
+      <div class="dot" data-index="2"></div>
+    </div>
+  </div>
+
+  <!-- MENU -->
+  <div class="dive-section">
+    <h2>Dive Into Our Special Menu</h2>
+    <p>Delicious meal dishes crafted for every craving</p>
+  </div>
+
+  <!-- MENU WIPE SLIDER -->
+  <div class="menu-slider-section">
+    <div class="menu-track-wrapper">
+      <div class="menu-track" id="menuTrack">
+        <a class="menu-card" href="product-details.html?id=1">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Burger">
+          <div class="menu-card-body">
+            <h4>Classic Smash Burger</h4>
+            <p>Beef patty, cheddar, lettuce</p>
+          </div>
+          <div class="menu-card-footer">
+            <span class="price">Rs. 1200</span><span class="btn-view">View Details</span>
+          </div>
+        </a>
+        <a class="menu-card" href="product-details.html?id=2">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Pizza">
+          <div class="menu-card-body">
+            <h4>Margherita Pizza</h4>
+            <p>Mozzarella, basil, tomato</p>
+          </div>
+          <div class="menu-card-footer">
+            <span class="price">Rs. 1500</span><span class="btn-view">View Details</span>
+          </div>
+        </a>
+        <a class="menu-card" href="product-details.html?id=3">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="Salad">
+          <div class="menu-card-body">
+            <h4>Garden Fresh Salad</h4>
+            <p>Mixed greens, vinaigrette</p>
+          </div>
+          <div class="menu-card-footer">
+            <span class="price">Rs. 900</span><span class="btn-view">View Details</span>
+          </div>
+        </a>
+        <a class="menu-card" href="product-details.html?id=4">
+          <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400" alt="Pasta">
+          <div class="menu-card-body">
+            <h4>Creamy Carbonara</h4>
+            <p>Spaghetti, pancetta, parmesan</p>
+          </div>
+          <div class="menu-card-footer">
+            <span class="price">Rs. 1400</span><span class="btn-view">View Details</span>
+          </div>
+        </a>
+        <a class="menu-card" href="product-details.html?id=5">
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400" alt="Bowl">
+          <div class="menu-card-body">
+            <h4>Grilled Chicken Bowl</h4>
+            <p>Chicken, rice, avocado</p>
+          </div>
+          <div class="menu-card-footer">
+            <span class="price">Rs. 1300</span><span class="btn-view">View Details</span>
+          </div>
+        </a>
+        <a class="menu-card" href="product-details.html?id=6">
+          <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=400" alt="Steak">
+          <div class="menu-card-body">
+            <h4>Ribeye Steak</h4>
+            <p>Prime cut, herb butter, fries</p>
+          </div>
+          <div class="menu-card-footer">
+            <span class="price">Rs. 2800</span><span class="btn-view">View Details</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="menu-nav">
+      <button id="menuPrev">&#8249;</button>
+      <button id="menuNext">&#8250;</button>
+    </div>
+  </div>
+
+  <!-- BREAKFAST MENU -->
+  <div class="meal-menu-section">
+    <div class="meal-icon"></div>
+    <h2 class="section-title">Breakfast Special Menu</h2>
+    <p class="section-sub">Start your morning right with our signature breakfast dishes</p>
+    <div class="meal-grid">
+      <div class="meal-item">
+        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=200" alt="Item">
+        <div class="meal-item-info">
+          <h5>Crispy Chicken Poblano</h5>
+          <p>Beef, chicken, turkey.</p>
+        </div>
+        <div class="meal-item-price">Rs. 1200</div>
+      </div>
+      <div class="meal-item">
+        <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=200" alt="Item">
+        <div class="meal-item-info">
+          <h5>French Toast Combo</h5>
+          <p>Fresh berries, maple syrup, bacon.</p>
+        </div>
+        <div class="meal-item-price">Rs. 640</div>
+      </div>
+    </div>
+    <div class="book-table-wrap">
+      <a href="#reservation" class="btn-primary">Book a Table</a>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS SLIDER -->
+  <div class="testimonials-section">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <p class="section-sub">Real experiences from our valued guests</p>
+    <div class="testimonials-wrapper">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Absolutely the best dining experience I've had in the city. The food was phenomenal and the staff was so welcoming."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+            <div><h5>Sarah Johnson</h5><span>Regular Customer</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"The breakfast menu is out of this world. Fresh ingredients, amazing presentation, and top service."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+            <div><h5>Ahmed Khan</h5><span>Food Blogger</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"We celebrated our anniversary here and it was magical. The ribeye steak exceeded all our expectations!"</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client">
+            <div><h5>Maria Garcia</h5><span>Loyal Guest</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-nav">
+      <button id="tPrev">&#8249;</button>
+      <button id="tNext">&#8250;</button>
+    </div>
+    <div class="testimonials-dots" id="testimonialsDots"></div>
+  </div>
+
+  <!-- CTA SECTION -->
+  <div class="cta-section">
+    <h2>Do Not Wait - Order Now!</h2>
+    <div class="cta-features">
+      <span>Fresh Ingredients</span>
+      <span>Mouth Watering Recipes</span>
+      <span>Delivered to Your Door</span>
+      <span>Ready for Pickup</span>
+    </div>
+    <a href="#reservation" class="btn-primary" style="background:white; color:var(--primary);">Order Now</a>
+  </div>
+
+  <!-- RESERVATION FORM -->
+  <div class="reservation-section" id="reservation">
+    <h2 class="section-title">Reserve Your Table</h2>
+    <p class="section-sub">Fill in the details below and we'll confirm your booking</p>
+    <div id="reservationSuccess" style="display:none; background:#d4edda; color:#155724; padding:14px; border-radius:10px; margin-bottom:16px; font-weight:600; text-align:center;"></div>
+    <form class="form-grid" id="reservationForm">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="resName" placeholder="Enter your name">
+        <span class="auth-error" id="resNameErr">Name is required</span>
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" id="resPhone" placeholder="Enter your phone">
+        <span class="auth-error" id="resPhoneErr">Phone is required</span>
+      </div>
+      <div class="form-group">
+        <label>Date</label>
+        <input type="date" id="resDate">
+        <span class="auth-error" id="resDateErr">Date is required</span>
+      </div>
+      <div class="form-group">
+        <label>Time</label>
+        <input type="time" id="resTime">
+        <span class="auth-error" id="resTimeErr">Time is required</span>
+      </div>
+      <div class="form-group">
+        <label>Number of Guests</label>
+        <select id="resGuests">
+          <option value="">Select guests</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5+">5+</option>
+        </select>
+        <span class="auth-error" id="resGuestsErr">Please select guests</span>
+      </div>
+      <div class="form-group">
+        <label>Occasion</label>
+        <select id="resOccasion">
+          <option value="">Select occasion</option>
+          <option value="Birthday">Birthday</option>
+          <option value="Anniversary">Anniversary</option>
+          <option value="Business Dinner">Business Dinner</option>
+          <option value="Casual Dining">Casual Dining</option>
+        </select>
+      </div>
+      <div class="form-group full-width">
+        <label>Special Requests</label>
+        <textarea id="resNote" rows="3" placeholder="Any special requests..."></textarea>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn-primary">Confirm Reservation</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <div class="footer-logo-circle">UB</div>
+          <div class="footer-logo">Urban <span>Bites</span></div>
+        </div>
+        <p class="footer-tagline">
+          Fresh ingredients & mouth watering recipes.<br>
+          A passion for good food delivered to your door<br>
+          or ready for pickup.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li>Mon-Fri: 8am - 10pm</li>
+          <li>Saturday: 9am - 11pm</li>
+          <li>Sunday: 10am - 9pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Urban Bites. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="productsdata.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

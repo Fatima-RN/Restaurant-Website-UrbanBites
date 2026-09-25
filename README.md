@@ -21,6 +21,24 @@ A modern, responsive, and interactive restaurant web application built with HTML
 - **Scripting:** JavaScript (ES6+, DOM manipulation, LocalStorage API)
 - **Version Control & Deployment:** Git, GitHub, Vercel
 
+## Project Structure
+
+```text
+urban-bites/
+│
+├── index.html         # Landing page (Hero, Featured Menu, Testimonials)
+├── menu.html          # Full restaurant menu catalog
+├── about.html         # About Us page
+├── contact.html       # Contact form & location details
+├── login.html         # User login portal
+├── signup.html        # New account registration
+├── product-detail.html# Individual item view & custom quantity selector
+│
+├── style.css          # Global styles, layout, and responsive media queries
+├── app.js             # Core script logic (Cart, Sliders, Auth, Form validations)
+└── productsdata.js    # Data source containing menu items, prices, and descriptions
+```
+
 ## Live Demo
 
 Explore the live application here: [The Urban Bites Live Website](https://urban-bites-sigma.vercel.app/)
@@ -49,21 +67,3 @@ To run this project locally on your machine, follow these steps:
   git commit -m "Update: fixed bugs and improved features"
   git push origin main
   ```
-
-## Project Structure
-
-```text
-urban-bites/
-│
-├── index.html         # Landing page (Hero, Featured Menu, Testimonials)
-├── menu.html          # Full restaurant menu catalog
-├── about.html         # About Us page
-├── contact.html       # Contact form & location details
-├── login.html         # User login portal
-├── signup.html        # New account registration
-├── product-detail.html# Individual item view & custom quantity selector
-│
-├── style.css          # Global styles, layout, and responsive media queries
-├── app.js             # Core script logic (Cart, Sliders, Auth, Form validations)
-└── productsdata.js    # Data source containing menu items, prices, and descriptions
-```
